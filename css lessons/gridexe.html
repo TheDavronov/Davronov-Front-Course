@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="grid-areas">
+        <div class="grid-item block-1">1</div>
+        <div class="grid-item block-2">2</div>
+        <div class="grid-item block-3">3</div>
+        <div class="grid-item block-4">4</div>
+        <div class="grid-item block-5">5</div>
+    </div>
+
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-areas {
+        background-color: #333;
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "header header header header header header "
+            "side side content content  right right"
+            "side side footer footer footer footer"
+        ;
+    }
+
+    .grid-item {
+        background-color: gray;
+        font-size: 30px;
+        color: snow;
+        border: 3px dashed green;
+        padding: 75px;
+    }
+
+    .block-1 {
+        grid-area: header;
+    }
+
+    .block-2 {
+        grid-area: side;
+    }
+
+    .block-3 {
+        grid-area: content;
+    }
+
+    .block-4 {
+        grid-area: right;
+    }
+
+    .block-5 {
+        grid-area: footer;
+    }
+</style>
+
+
+
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="logo">Logo</div>
+    </main>
+
+</body>
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        transition: all 0.5s linear 0s;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #222;
+        color: snow;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 50%;
+        margin: 0 auto;
+        background-color: lightgray;
+        border-radius: 20px;
+    }
+
+    .logo {
+        background: radial-gradient(indigo 20%, black, red, yellow 50%, black 80%);
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: #222;
+    }
+
+    main:hover .logo {
+        transform: rotate(360deg);
+        box-shadow: 0 0 20px 5px red,
+            0 0 20px 10px blue,
+            0 0 20px 15px black;
+    }
+</style>
+
+</html>

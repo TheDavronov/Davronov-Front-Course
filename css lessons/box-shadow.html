@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+    <main class="block-1"></main>
+    <main class="block-2"></main>
+
+</body>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+    }
+
+    div{
+        /* max-width: 400px; */
+        /* min-width: 400px; */
+        /* margin: 20px auto; */
+    }
+
+    div:hover {
+        padding: 50px;
+        box-shadow: 5px 5px 20px 5px red,
+            -5px -5px 20px 5px blue,
+            5px 5px 20px 5px red inset,
+            -5px -5px 20px 5px blue inset,
+            0 0 50px 50px black inset;
+        width: 350px;
+        height: 300px;
+        text-align: center;
+        margin: 20px auto;
+        text-shadow: 2px 2px 3px red,
+            -2px -2px 3px blue,
+            4px 4px 4px green;
+    }
+
+
+    .block-1 {
+        background-color: gray;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+    }
+
+    .block-2 {
+        background-color: gray;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+    }
+</style>
+
+</html>

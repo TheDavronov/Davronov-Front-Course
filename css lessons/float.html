@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+</head>
+
+<body>
+
+    <div class="block">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione at facere totam rem, soluta laborum nobis
+            quo quibusdam reprehenderit quos mollitia, possimus, nesciunt adipisci beatae assumenda ab maiores vitae?
+            In, earum debitis maxime, sapiente vel eveniet ea laborum ducimus blanditiis illum, quam veritatis
+            voluptatibus fugiat necessitatibus nisi libero iste aliquam!
+        </p>
+    </div>
+
+
+    <!-- <div class="block2">
+        <img src="/img/19.jpg" alt="" width="200px" height="200px">
+        <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus veritatis perferendis voluptate ipsam, consequatur,
+            placeat architecto error accusamus sunt at, cupiditate
+            asperiores non laudantium aperiam nobis dolorum. Dolores
+            ab similique id omnis facere ea voluptatum repellat eos
+            , numquam saepe, minus temporibus sequi corporis magni.
+            Cumque et voluptas expedita fuga
+        </span>
+    </div> -->
+
+</body>
+<style>
+    .block::-webkit-scrollbar {
+        width: 30px;
+        background-color: lightgreen;
+        border-radius: 10px;
+    }
+    
+    .block::-webkit-scrollbar-thumb{
+        box-shadow: 0 0 10px 5px red inset;
+        border-radius: 10px;
+    }
+
+    .block::-webkit-scrollbar-button{
+        box-shadow: 0 0 5px 2px blue inset;
+        border-radius: 10px;
+    }
+    .block::-webkit-resizer{
+        border-radius: 10px;
+        box-shadow: 0 0 10px 5px red inset;
+    }
+
+    .block2 {
+        padding: 10px;
+        overflow: auto;
+        border: 2px solid black;
+    }
+
+    .block2 img {
+        float: right;
+    }
+
+
+
+    .block {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        overflow: scroll;
+        overflow: hidden;
+        overflow: visible;
+        overflow: auto;
+        float: left;
+        border-radius: 10px;
+        resize: horizontal;
+        resize: vertical;
+        resize: both;
+    }
+    
+</style>
+
+</html>

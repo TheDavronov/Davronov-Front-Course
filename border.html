@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Borders (groove, ridge, inset, outset) && hover + transition-time -->
+
+    <div class="block"></div>
+    <br>
+    <br>
+    <br>
+    <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure veniam ipsam itaque veritatis fugiat mollitia
+        nesciunt facere, deserunt optio ex aliquam aspernatur quam vitae delectus, dignissimos voluptatum? Dolores, fuga
+        est.
+    </span>
+
+</body>
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+    .block {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        border: 10px double black;
+        border: 5px dotted black;
+        border: 5px dashed black;
+        border: 10px  ridge  gray;
+        border: 10px  groove gray;
+        border: 10px  outset gray;
+        border: 5px  inset gray;
+        outline: 5px solid green;
+        background-color: dodgerblue;
+        /* border-radius: 20px 40px 60px 80px; */
+  
+
+    }
+
+    .block:hover {
+        border-radius: 50%;
+        border-left: 10px dotted green;
+        border-top: 10px double green;
+        border-bottom: 10px inset green;
+        border-right: 10px outset green;
+    }
+
+    span {
+        outline: 5px solid gray;
+    }
+</style>
+
+</html>

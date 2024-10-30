@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <p>только одна цифра</p>
+        <input id="phone" type="tel" pattern="\d">
+        <p>любая цифра от 0 до 9</p>
+        <input id="phone2" type="tel" pattern="[0-9]">
+        <p>любая цифра от 5 до 9</p>
+        <input id="phone3" type="tel" pattern="[5-9]">
+        <p>любой символ и буквы</p>
+        <input id="phone4" type="tel" pattern="[\D]">
+        <p>only one space</p>
+        <input id="phone4" type="tel" pattern="[\s]">
+        <p>дефис</p>
+        <input id="phone4" type="tel" pattern="[\-]">
+        <p>1th any symbol || 2nd space || 3rd any number </p>
+        <input id="phone4" type="tel" pattern="[\D\s\d]">
+        <p>uppercase only one letter</p>
+        <input id="phone4" type="tel" pattern="[A-Z]">
+        <p>only one letter any register</p>
+        <input id="phone4" type="tel" pattern="[A-Za-z]">
+        <p>uppercase only one cyrillic letter </p>
+        <input id="phone4" type="tel" pattern="[А-Я]">
+        <p>only one cyrillic letter any register </p>
+        <input id="phone4" type="tel" pattern="[А-Яа-яЁё]">
+        <p>only one letter any language and any register</p>
+        <input id="phone4" type="tel" pattern="[A-Za-zА-Яа-яЁё]">
+        <p>two letter 1st english || 2nd cyrillic</p>
+        <input id="phone4" type="tel" pattern="[A-Za-z][А-Яа-яЁё]">
+        <p>Password only 6 number</p>   
+        <input id="phone4" type="text" pattern="[0-9]{6}">
+        <p>Password min 6 max infinity</p>
+        <input id="phone4" type="text" pattern="[A-Z0-9]{6,}">
+        <p>Password min 6 max infinity with spaces</p>
+        <input id="phone4" type="text" pattern="[A-Z0-9\s]{6,}">
+        <p>Password infinity </p>
+        <input id="phone4" type="text" pattern="[A-Z0-9\s]+">
+        <p>Password min max</p>
+        <input id="phone4" type="text" pattern="[A-Z0-9\s]{1,6}">
+        <p>дробные числа</p>
+        <input id="phone4" type="text" pattern="\d+(\.\d{1,})?">
+        <p>login</p>
+        <input id="phone4" type="text" pattern="[a-z]\d+">
+        <p>login</p>
+        <input id="phone4" type="text" pattern="(ac|ab|aa)\d+">
+        <p>login</p>
+        <input id="phone4" type="text" pattern="(ac|ab|aa)?\d+">
+        <p>credit card</p>
+        <input id="phone4" type="text" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}">
+        <p>credit card</p>
+        <input id="phone4" type="text" pattern="\d{4}\-\d{4}\-\d{4}\-\d{4}">
+
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+
+</body>
+<style>
+    input:invalid {
+        animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        background-color: darkred;
+        color: white;
+    }
+
+    input:valid{
+        animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+        background-color: green;
+        color: white;
+    }  
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-2px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(3px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-5px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(6px, 0, 0);
+        }
+    }
+</style>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Block</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <p>
+            Lorem, ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Nobis eligendi officia tenetur obcaecati harum,
+            mollitia, accusantium magni velit, et nesciunt recusandae perspiciatis dolor. Corrupti accusamus quod
+            consectetur quia, illo libero eos <span> magni et consequuntur,</span> commodi labore est aut? Laboriosam tenetur facere
+            assumenda expedita cumque dolor incidunt esse iusto totam voluptas.
+        </p>
+        <img src="/img/19.jpg" alt="">
+        <img src="/img/19.jpg" alt="">
+        <img src="/img/19.jpg" alt="">
+        <br>
+        <img class="hidden" src="/img/19.jpg" alt="">
+        <img class="hidden" src="/img/19.jpg" alt="">
+        <img class="hidden" src="/img/19.jpg" alt="">
+        <br>
+        <img src="/img/19.jpg" alt="">
+        <img class="hidden" src="/img/19.jpg" alt="">
+        <img src="/img/19.jpg" alt="">
+    </div>
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+        /* box-sizing: border-box; */
+    }
+
+    body {
+        background-color: black;
+        color: snow;
+    }
+
+    .main {
+        background-color: #444;
+        width: 70%;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    img {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+    }
+
+    .main:hover {
+        padding: 50px 100px;
+        background: url(/img/19.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.504);
+    }
+
+    span{
+        border: 2px solid magenta;
+        display: inline-block;
+        background-color: darkgreen;
+        border-radius: 10px;
+    }
+    span:hover {
+        padding: 20px;
+        background: url(/img/19.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.504);
+        text-transform: uppercase;
+    }
+
+    .hidden{
+        visibility: hidden;
+    }
+
+    img:hover{
+        border: double 10px green;
+        box-sizing: border-box;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+</style>
+
+</html>

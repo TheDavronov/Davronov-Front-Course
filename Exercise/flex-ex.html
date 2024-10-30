@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Градиенты и Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Мой Сайт</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 1</h3>
+            <p>Это описание первого элемента.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 2</h3>
+            <p>Это описание второго элемента.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 3</h3>
+            <p>Это описание третьего элемента.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 4</h3>
+            <p>Это описание четвертого элемента.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 5</h3>
+            <p>Это описание пятого элемента.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <h3>Заголовок 6</h3>
+            <p>Это описание шестого элемента.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Мой Сайт. Все права защищены.</p>
+    </footer>
+</body>
+<style>
+    /* styles.css */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        background: #f0f0f0;
+        
+    }
+
+    header {
+        background: #333;
+        /* Цвет фона для навигационного бара */
+        color: white;
+        /* Цвет текста */
+    }
+
+    .navbar {
+        display: flex;
+        /* Используем flexbox для навигации */
+        justify-content: space-between;
+        /* Разделяем элементы */
+        align-items: center;
+        /* Вертикальное выравнивание */
+        padding: 15px 30px;
+        /* Отступы */
+    }
+
+    .nav-links {
+        list-style: none;
+        /* Убираем маркеры у списка */
+        display: flex;
+        /* Используем flexbox для списка */
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+        /* Отступ между элементами списка */
+    }
+
+    .nav-links a {
+        color: white;
+        /* Цвет ссылок */
+        text-decoration: none;
+        /* Убираем подчеркивание ссылок */
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+        /* Подчеркивание при наведении */
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        flex: 1 0 auto;
+        /* Центрируем контейнер */
+    }
+
+    .card {
+        background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        background: #333;
+        /* Цвет фона для футера */
+        color: white;
+        /* Цвет текста */
+        text-align: center;
+        /* Центрируем текст */
+        padding: 15px 0;
+        /* Отступы сверху и снизу */
+        position: relative;
+        /* Не фиксируем футер */
+        bottom: 0;
+        /* Для позиционирования */
+        width: 100%;
+        /* Ширина футера на всю страницу */
+    }
+</style>
+
+</html>

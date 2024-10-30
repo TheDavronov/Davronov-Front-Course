@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="block">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis suscipit esse natus? Fuga, tempora.</p>
+        <div class="child">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quasi exercitationem esse assumenda dolore aut.
+            </p>
+        </div>
+    </div>
+    
+</body>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            transition: 1s;
+            padding: 0;
+            margin: 0;
+        }
+
+        .block{
+            width: 85%;
+            margin: 10px auto;
+            padding: 50px 15px;
+            background-color: black;
+            border-radius: 0 50px 0 50px;
+            color: snow;
+        }
+        
+        .block .child{
+            padding: 50px 15px;
+            margin: 10px 10px;
+        }
+
+        .block:hover{
+            background: url(/20.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(50, 0, 0, 0.587);
+            background-blend-mode: darken;
+            border-radius: 50px 0 50px 0;
+            border: 5px dotted red;
+            text-decoration: underline 5px dashed blue;
+        }
+        .block:hover .child{
+            background: url(/20.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(0, 50, 0, 0.587);
+            background-blend-mode: darken;
+            border-radius: 50px 0 50px 0;
+            border: 5px dotted red;
+            text-decoration: underline 5px dashed blue;
+        }
+    </style>
+
+
+</html>

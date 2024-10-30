@@ -1,0 +1,22 @@
+
+
+.block1{
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    background-color: gray;
+    margin: 20px auto;
+    box-sizing: border-box;
+    /* box-shadow: 10px 10px 10px 10px red, -10px -10px 10px 10px blue,  */
+    /* 10px 10px 10px 10px red inset, -10px -10px 10px 10px blue inset; */
+    text-shadow: 2px 2px 4px red, 4px 4px 4px blue,
+    -2px -2px 4px red, -4px -4px 4px blue ;
+}
+
+
+.block2{
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    margin: 20px auto;
+}

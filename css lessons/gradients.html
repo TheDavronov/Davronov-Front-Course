@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+</head>
+<body>
+    
+    <div class="block">
+        <img class="c1" src="/img/comma.png" alt="">
+        <img class="c2" src="/img/comma.png" alt="">
+        <img class="c3" src="/img/comma.png" alt="">
+        <img class="c4" src="/img/comma.png" alt="">
+        <img class="c5" src="/img/comma.png" alt="">
+        <img class="c6" src="/img/comma.png" alt="">
+    </div>
+
+</body>
+
+<style>
+
+    body{
+        background-color: #000;
+    }
+
+    .block{
+        width: 600px;
+        height: 450px;
+        margin: 0 auto;
+        border-radius: 50%;
+        /* background: linear-gradient(120deg, green 30%,  red 50%, rgb(255, 255, 0) 60%,  blue); */
+        /* background: linear-gradient(120deg, rgba(0, 0, 255, 0), rgb(128, 128, 128)); */
+        /* background: linear-gradient(to right, green 30%,  red 50%, yellow 60%,  blue); */
+        /* background: linear-gradient(to left, green 30%,  red 50%, yellow 60%,  blue); */
+        /* background: linear-gradient(to top, green 30%,  red 50%, yellow 60%,  blue); */
+        /* background: linear-gradient(to bottom, green 30%,  red 50%, yellow 60%,  blue); */
+        /* background: repeating-linear-gradient(red, yellow 10%, green 20%); */
+        /* background: radial-gradient(red, yellow, green); */
+        /* background: radial-gradient(circle, red, yellow, green); */
+        background: repeating-radial-gradient(circle, gray, purple 10%, black 15%);
+        position: relative;
+    }
+
+    .c1{
+        position: absolute;
+        top: 16%;
+        left: 7%;
+        transform: rotate(140deg);
+    }
+    .c2{
+        position: absolute;
+    }
+    .c3{
+        position: absolute;
+    }
+    .c4{
+        position: absolute;
+    }
+    .c5{
+        position: absolute;
+    }
+    .c6{
+        position: absolute;
+    }
+
+</style>
+</html>

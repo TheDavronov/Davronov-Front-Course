@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+    </main>
+
+</body>
+<style>
+    *,::before,::after{
+        box-sizing: border-box;
+        transition: 1s;
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-color: #333;
+    }
+
+    main{
+        width: 40%;
+        margin: 5% auto;
+        box-shadow: 0 0 100px 50px lightblue inset,
+        0 0 50px 20px green;
+        padding: 10px 100px;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+
+
+    ul li{
+        position: relative;
+        list-style-type: lao;
+        font-style: italic;
+        padding: 20px 50px;
+    }
+
+    ul li::before{
+        content: '😴';
+        opacity: 0;
+        position: absolute;
+        left: 20%;
+    }
+
+
+    ul li:hover::before{
+        content: '😎';
+        opacity: 1;
+        position: absolute;
+        left: -10%;
+    }
+
+    ul li:hover{
+        list-style-type: none;
+    } 
+</style>
+</html>

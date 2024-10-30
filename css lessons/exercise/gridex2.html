@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Ex</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item block-1">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="grid-item block-2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="grid-item block-3"></div>
+    </div>
+
+</body>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .grid-container{
+        margin: 10px auto;
+        width: 400px;
+        height: 250px;
+        display: grid;
+        background-color: #000;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+
+    .grid-container .block-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        background-color: #000;
+    }
+    .grid-container .block-2{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        background-color: #000;
+    }
+
+    .block-3{
+        background-color: gray;
+    }
+
+    .block-1 div,.block-2 div{
+        background-color: gray;
+    }
+</style>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Navbar and Cards</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Responsive Layout</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </div>
+        <section class="content">
+            <h2>Main Content</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>This is some text inside card 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>This is some text inside card 2.</p>
+                </div>
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>This is some text inside card 3.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <footer class="footer">
+        <p>Footer &copy; 2023</p>
+    </footer>
+</body>
+<style>
+    :root {
+        --header-bg: #444;
+        --header-color: white;
+        --sidebar-bg: #f4f4f4;
+        --content-bg: #fff;
+        --footer-bg: #333;
+        --footer-color: white;
+        --card-bg: #e2e2e2;
+        --max-width: 1200px;
+        --padding: 1rem;
+        --margin: 1rem;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    body {
+        position: relative;
+        font-family: Arial, sans-serif;
+        flex: 1 1 auto;
+        margin: 0;
+        overflow: auto;
+    }
+
+    body:before {
+        content: '';
+        background: url(/img/1.JPG) center / cover no-repeat;
+        z-index: -1;
+        filter: brightness(50%) blur(1px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+
+    .header {
+        background-color: var(--header-bg);
+        color: var(--header-color);
+        padding: var(--padding);
+        text-align: center;
+    }
+
+    .navbar {
+        margin-top: 1rem;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: inline;
+        /* Make items inline */
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        color: var(--header-color);
+        text-decoration: none;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: var(--padding);
+    }
+
+    .sidebar {
+        position: relative;
+        flex: 1 1 250px;
+        /* Flex-grow, flex-shrink, and flex-basis */
+        background-color: var(--sidebar-bg);
+        padding: var(--padding);
+    }
+
+
+    .sidebar::before {
+        position: absolute;
+        background: url(/img/1.JPG) center / cover no-repeat;
+        content: '';
+        filter: brightness(50%) blur(1px);
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sidebar h1,
+    .sidebar p {
+        position: relative;
+        z-index: 1;
+        color: snow;
+        font-size: 30px;
+    }
+
+    .content {
+        flex: 1 1 500px;
+        /* Flex-grow, flex-shrink, and flex-basis */
+        background-color: var(--content-bg);
+        padding: var(--padding);
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--margin);
+    }
+
+    .card {
+        position: relative;
+        flex: 1 1 300px;
+        /* Flex-grow, flex-shrink, and flex-basis */
+        background-color: var(--card-bg);
+        padding: var(--padding);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h1,
+    .card p {
+        position: relative;
+        z-index: 1;
+        color: snow;
+    }
+
+    .card::before {
+        content: '';
+        background: url(/img/1.JPG) center / cover no-repeat;
+        z-index: 0;
+        filter: brightness(50%) blur(1px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer {
+        background-color: var(--footer-bg);
+        color: var(--footer-color);
+        text-align: center;
+        padding: var(--padding);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .main-content {
+            flex-direction: column;
+        }
+
+        .sidebar,
+        .content {
+            flex: 1 1 100%;
+            /* Each section takes full width */
+        }
+
+    }
+</style>
+
+</html>

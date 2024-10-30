@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block</title>
+</head>
+
+<body>
+
+    <div class="inline">
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+    </div>
+    <a href="#">Lorem, ipsum dolor.</a>
+
+    <div class="inline-block">
+        <h3>Inline-block</h3>
+        <h3>Inline-block</h3>
+    </div>
+    <div class="inline">
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+        <h4>Inline</h4>
+    </div>
+
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    a {
+        display: inline-block;
+        margin: 10px;
+        padding: 5px;
+        background-color: gray;
+        color: snow;
+        text-decoration: none;
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    a:hover {
+        /* opacity: 0.5; */
+        /* opacity: 0; */
+    }
+
+
+    .inline {
+        margin: 10px;
+        background-color: gray;
+    }
+
+    .inline h4 {
+        background-color: gray;
+        display: inline;
+        /* display: block; */
+    }
+
+
+    .inline-block {
+        /* display: inline; */
+        /* display: inline-block; */
+        display: block;
+        display: none;
+        background-color: gray;
+        height: 200px;
+        width: 200px;
+    }
+</style>
+
+</html>

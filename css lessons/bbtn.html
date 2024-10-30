@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B_BTN</title>
+</head>
+
+<body>
+
+    <button>Awesome</button>
+    <input type="text" pattern="[A-Za-z]">
+
+</body>
+
+<style>
+    *,
+    ::before,
+    ::after {
+        transition: 1s;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: lightgrey;
+        min-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button,
+    input {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    button {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 10px;
+        border: darkred 2px solid;
+        background-color: #fff;
+    }
+
+    input {
+        min-width: 400px;
+        border-radius: 10px;
+        padding: 10px 30px;
+        background-color: gray;
+        outline: none;
+        border: none;
+        color: snow;
+    }
+
+    button::before {
+        content: 'Awesome';
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: url(/img/11.jpg) center / cover no-repeat;
+        border-radius: inherit;
+        box-shadow: 0 0 10px 2px inset red;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+    }
+
+    button:hover {
+        box-shadow: 100px 0 5px 0 darkred inset,
+            -100px 0 5px 0 darkred inset,
+            0 50px 5px 0 orange inset,
+            0 -50px 5px 0 orange inset;
+        color: snow;
+    }
+
+    button:hover::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    input:invalid {
+        animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        box-shadow: 400px 0 5px 0 rgb(20, 9, 96) inset,
+            0 50px 5px 0 rgba(239, 17, 17, 0.557) inset,
+            0 0 15px 10px rgb(131, 24, 14);
+    }
+
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-2px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(3px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-5px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(6px, 0, 0);
+        }
+    }
+</style>
+
+</html>
